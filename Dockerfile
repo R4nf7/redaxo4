@@ -8,4 +8,4 @@ RUN curl -Ls -o /tmp/redaxo.zip https://github.com/redaxo/redaxo4/releases/downl
       chown -R www-data:www-data redaxo && \
       mv redaxo html
 
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY etc/nginx.default.conf /etc/nginx/conf.d/default.conf
