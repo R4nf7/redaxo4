@@ -2,7 +2,7 @@ setup: false
 debug: false
 instname: rex20160912113553
 server: 'http<?= getenv('LETSENCRYPT_HOST') ? 's' : '' ?>://<?= explode(',', getenv('VIRTUAL_HOST'))[0] ?>/'
-servername: Vedacon
+servername: 
 error_email: <?= getenv('ERROR_EMAIL'), PHP_EOL ?>
 fileperm: '0664'
 dirperm: '0775'
